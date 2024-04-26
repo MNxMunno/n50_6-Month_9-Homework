@@ -4,8 +4,10 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/logo.svg";
 import axios from "../../api";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState("atuny0");
   const [password, setPassword] = useState("9uQFF1Lh");
 
@@ -18,8 +20,10 @@ const Login = () => {
     axios
       .post("/auth/login", user)
       .then((res) => {
-        console.log(res);
+        console.log(res.data.token);
         toast.success("Welcome");
+        localStorage.setItem("x-auth-toke", res.data.token);
+        navigate("/admin");
       })
       .catch((err) => {
         console.error(err);
