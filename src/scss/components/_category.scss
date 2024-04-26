@@ -1,0 +1,46 @@
+.category {
+  padding: 40px 0;
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    .card {
+      max-width: 375px;
+      position: relative;
+      img {
+        width: 375px;
+      }
+      h2 {
+        max-width: 225px;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        color: #253d4e;
+      }
+      button {
+        position: absolute;
+        bottom: 30px;
+        left: 15px;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15.6px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        background: #f53e32;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}

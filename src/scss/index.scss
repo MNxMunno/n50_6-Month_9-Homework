@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: transparent;
+}
+
+@import "../scss/components/header.scss";
+@import "../scss/components/footer.scss";
+@import "../scss/components/main.scss";
+@import "../scss/components/products.scss";
+@import "../scss/components/hero.scss";
+@import "../scss/components/category.scss";
+@import "../scss/router/login";

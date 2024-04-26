@@ -1,0 +1,110 @@
+.products {
+  padding-top: 34px;
+  .product__content {
+    h1 {
+      padding: 10px 0;
+      font-family: sans-serif;
+    }
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      .card {
+        width: 298px;
+
+        border: 2px solid #ebebeb;
+        padding: 20px 10px 10px 10px;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+        &:hover {
+          box-shadow: 3px 3px 5px rgba(137, 137, 137, 0.2);
+        }
+        .img {
+          width: 258px;
+          margin: auto;
+          img {
+            height: 200px;
+            width: 100%;
+            object-fit: contain;
+            background: transparent;
+            border-radius: 8px;
+          }
+        }
+        .rating {
+          display: flex;
+          width: 60px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #d8d7d7;
+          color: #212159;
+          text-align: center;
+          padding: 0px 0px 3px;
+          border-bottom-right-radius: 15px;
+        }
+        b {
+          text-transform: uppercase;
+          font-family: sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: #adadad;
+        }
+        h1 {
+          font-family: sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          color: #2b2b2d;
+          padding: 4px 0;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+        }
+        .price_btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 5px;
+          padding-top: 6px;
+          .price {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            color: #3bb77e;
+          }
+          .cart {
+            padding: 9px 10px;
+            background: rgb(223, 37, 37);
+            color: aliceblue;
+            border-radius: 8px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: 0.2s;
+            cursor: pointer;
+            &:active {
+              background: rgb(161, 18, 18);
+            }
+            svg {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
