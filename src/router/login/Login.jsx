@@ -23,7 +23,7 @@ const Login = () => {
         console.log(res.data.token);
         toast.success("Welcome");
         localStorage.setItem("x-auth-token", res.data.token);
-        navigate("/");
+        navigate("/admin");
       })
       .catch((err) => {
         console.error(err);
