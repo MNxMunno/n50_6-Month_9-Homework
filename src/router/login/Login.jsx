@@ -23,7 +23,7 @@ const Login = () => {
         console.log(res.data.token);
         toast.success("Welcome");
         localStorage.setItem("x-auth-toke", res.data.token);
-        navigate("/admin");
+        navigate("admin");
       })
       .catch((err) => {
         console.error(err);
@@ -60,9 +60,9 @@ const Login = () => {
               placeholder="Enter Your password"
             />
           </label>
-          <label htmlFor="checkbox">
-            <p>Remember Me</p>
+          <label htmlFor="checkbox" className="checkbox">
             <input required type="checkbox" id="checkbox" name="checkbox" />
+            <p>Remember Me</p>
           </label>
           <button className="btn__login">Login</button>
         </form>
