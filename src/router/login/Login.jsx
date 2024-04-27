@@ -22,8 +22,8 @@ const Login = () => {
       .then((res) => {
         console.log(res.data.token);
         toast.success("Welcome");
-        localStorage.setItem("x-auth-toke", res.data.token);
-        navigate("admin");
+        localStorage.setItem("x-auth-token", res.data.token);
+        navigate("/");
       })
       .catch((err) => {
         console.error(err);
@@ -64,7 +64,9 @@ const Login = () => {
             <input required type="checkbox" id="checkbox" name="checkbox" />
             <p>Remember Me</p>
           </label>
-          <button className="btn__login">Login</button>
+          <button className="btn__login" type="submit">
+            Login
+          </button>
         </form>
       </div>
     </section>
